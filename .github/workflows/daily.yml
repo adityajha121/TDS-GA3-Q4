@@ -16,10 +16,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Daily commit step - 23f2005552@ds.study.iitm.ac.in
+      - name: Daily commit step - 23f2003863@ds.study.iitm.ac.in
         run: |
           echo "Run at $(date -u)" >> daily_log.txt
-          git config user.email "23f2005552@ds.study.iitm.ac.in"
+          git config user.email "23f2003863@ds.study.iitm.ac.in"
           git config user.name "DevSync Automation"
           git add daily_log.txt
           git commit -m "Automated daily update $(date -u)"
